@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- Your external JavaScript -->
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Login Page</h1>
+  <form id="loginForm">
+    <input type="email" name="email" placeholder="Email" required /><br>
+    <input type="password" name="password" placeholder="Password" required /><br>
+    <button type="submit">Login</button>
+  </form>
+  
+  <!-- Hidden error message -->
+  <div id="errormsg" class="hidemessage">User credentials do not match</div>
+</body>
+</html>

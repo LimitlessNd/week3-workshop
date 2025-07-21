@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+input, button {
+  margin: 5px;
+  padding: 8px;
+}
+.hidemessage {
+  display: none;
+}
+
+.showmessage {
+  display: block;
+  background-color: #ffcccc; /* light red background to show error */
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid red;
+  color: darkred;
+  width: fit-content;
+}
+
