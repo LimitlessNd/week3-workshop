@@ -1,23 +1,23 @@
-$(document).ready(function() {
+$(document).ready(function() {// Makes sure the code doesnt run until the HTML is loaded
   $('#loginForm').submit(function(event) {
-    event.preventDefault(); // Stop the form from submitting normally
+    event.preventDefault(); 
     
-    // Hide error message on new submit attempt
+    // Hide error message 
     $('#errormsg').removeClass('showmessage').addClass('hidemessage');
     
-    // Get form data
+    // Get form data from logged in user
     const email = $('input[name="email"]').val();
     const password = $('input[name="password"]').val();
     
     // Send AJAX POST request to /login
     $.post('/login', { email: email, password: password }, function(data) {
       if (data.valid === true) {
-        // Login success, you can redirect or update UI here
+        // Login success
         alert('Login successful!');
-        // Example: Redirect to account page
+        // Redirect to account page
         window.location.href = '/account';
       } else {
-        // Login failed, show error message div
+        // Login failed, shows error message 
         $('#errormsg').removeClass('hidemessage').addClass('showmessage');
       }
     });

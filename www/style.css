@@ -12,7 +12,7 @@ input, button {
 
 .showmessage {
   display: block;
-  background-color: #ffcccc; /* light red background to show error */
+  background-color: #ffcccc; 
   padding: 10px;
   margin-top: 10px;
   border: 1px solid red;
